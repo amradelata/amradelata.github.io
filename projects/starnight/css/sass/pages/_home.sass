@@ -1,0 +1,262 @@
+$gold: #e8b968
+
+*
+	box-sizing: border-box
+
+body
+	padding: 0
+	margin: 0
+	font-family: 'Roboto', sans-serif
+
+
+.overlay 
+	background: rgba(93, 105, 106, 0.84)
+	width: 100%
+	height: 100%
+
+.hero-section
+	background-image: url('../img/sky-photo.jpg')
+	height: 100vh
+	margin: 0
+	background-size: cover
+	background-position: center, center
+	position: relative
+	width: 100%
+	.contint
+		position: absolute
+		top: 30%
+		left: 50%
+		transform: translate(-50%, -50%)
+		text-align: center
+		color: #fff
+	h1
+		margin-bottom: 30px
+		font-size: 60px
+	span
+		font-size: 17px
+
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		width: 100px
+		height: 100px
+	button
+		background: #7accc8
+		border: none
+		border-radius: 5px
+		padding: 10px 50px
+		color: #fff
+		position: absolute
+		left: 50%
+		transform: translate(-50%)
+		bottom: 50px
+
+.min-ipad
+	background: $gold
+	color: #fff
+	position: relative
+	padding: 50px 0
+	padding-bottom: 170px
+	overflow: hidden
+	h3
+		margin-bottom: 35px
+		font-size: 51px
+	button
+		background: $gold
+		padding: 10px 40px
+		border: 3px solid #fff
+		border-radius: 3px
+		margin-top: 35px
+	.imge
+		position: absolute
+		top: 10px
+		right: 350px
+
+	.opacity
+		opacity: 0.1
+		position: absolute
+
+	.ipad
+		position: absolute
+		top: 8px
+		left: 15px
+// testimonials
+
+.testim
+	background: url('../img/3.png')
+	background-size: cover
+	background-position: center, center
+	z-index: 9999
+	position: relative
+.testim .client
+	padding: 100px 0
+	color: #fff
+	font-size: 20px
+.testim .client img
+	border-radius: 50%
+	height: 115px
+	border: 3px solid #fff
+	margin-bottom: 50px
+.testim .client p
+	font-size: 43px
+
+
+
+.arrow-down 
+	width: 0 
+	height: 0 
+	border-left: 20px solid transparent
+	border-right: 20px solid transparent
+	border-top: 20px solid #5e696a
+	position: absolute
+	left: 50%
+	transform: translate(-50%)
+
+
+.paragraph
+	padding: 100px 25px
+	color: #90979a
+	h5
+		margin-bottom: 25px
+		text-transform: uppercase
+
+	p
+		margin-bottom: 120px
+		padding-right: 100px
+		font-size: 16px
+.padding
+	// padding-left: 70px
+.center
+	background: #f69679
+	border: none
+	border-radius: 5px
+	padding: 15px 50px
+	color: #fff
+	display: block
+	margin: auto
+	margin-top: -100px
+
+.slider
+	background: #f6f6f4
+	margin-top: 100px
+	padding: 100px 0
+	position: relative
+	.cards
+		display: flex
+		flex-wrap: wrap
+		color: #9197a8
+.slider .cards .card
+	flex-basis: calc(50% - 20px)
+	display: inline-block
+	background-color: #fff
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+	margin: 10px
+	overflow: hidden
+.slider .cards .card .color-1
+	width: 100%
+	height: 300px
+	background: #f69679
+
+		
+.slider .cards .card .color-2
+	// width: 100%
+	height: 300px
+	background: #e8b968
+.slider .cards .card .paragraph-2
+	padding: 11px 0 40px 25px
+
+.right-content 
+	color: #abbcc3
+	h1
+		font-size: 45px
+		margin-bottom: 30px
+	p
+		font-size: 16px
+		line-height: 40px
+	i
+		cursor: pointer
+		position: absolute
+		// bottom: -222px
+		right: 140px
+		font-size: 25px
+	i:hover
+		color: #000
+.fa-angle-right:before
+	// color: red
+	position: absolute
+	bottom: -213px
+
+.fa-angle-left:before 
+	position: absolute
+	bottom: -213px
+	right: 20px
+
+
+.foter
+	background: #7accc8
+	color: #fff
+	padding: 100px 0
+	p
+		font-size: 14px
+		text-align: left
+
+	span
+		display: block
+		margin-bottom: 20px
+
+	h5
+		text-align: center
+		margin-top: 200px
+		text-transform: uppercase
+
+
+
+@media (max-width: 480px)
+
+	.hero-section img
+		top: 70%
+
+	.hero-section button
+		padding: 10px 40px
+
+	.min-ipad
+		height: 1500px
+
+	.min-ipad .ipad
+		left: 60px
+		top: 25px
+
+	.min-ipad .opacity
+		top: 15px
+		left: 50px
+
+	.paragraph p
+		padding-right: 0
+
+	.slider
+		margin-top: 0
+
+	.slider .cards .card
+		flex-basis: calc(100% - 20px)
+
+	.right-content h1
+		margin-bottom: 50px
+		margin-top: 50px
+
+	.foter p
+		margin-bottom: 50px
+
+	.fa-angle-right:before
+		bottom: -77px
+		left: 100px
+
+	.fa-angle-left:before
+		bottom: -77px
+		left: 70px
+
+	.center
+		margin-bottom: 50px
+
+	

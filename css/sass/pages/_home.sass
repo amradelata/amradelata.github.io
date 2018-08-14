@@ -1,0 +1,466 @@
+$primary-color: #673dfc
+$lite-blue: #0a5ae3
+
+
+*
+	box-sizing: border-box
+
+body
+	padding: 0
+	margin: 0
+	font-family: 'Roboto Condensed', sans-serif
+
+
+
+
+
+// /* Center the loader */
+#loader 
+	position: absolute
+	left: 50%
+	top: 50%
+	z-index: 1
+	width: 150px
+	height: 150px
+	margin: -75px 0 0 -75px
+	border: 16px solid #f3f3f3
+	border-radius: 50%
+	border-top: 16px solid #3498db
+	width: 120px
+	height: 120px
+	-webkit-animation: spin 2s linear infinite
+	animation: spin 2s linear infinite
+
+
+@-webkit-keyframes spin 
+	0%
+		transform: rotate(0deg)
+	100%
+		-webkit-transform: rotate(360deg)
+
+
+@keyframes spin 
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
+
+/* Add animation to "page content" */
+.animate-bottom 
+	position: relative
+	-webkit-animation-name: animatebottom
+	-webkit-animation-duration: 1s
+	animation-name: animatebottom
+	animation-duration: 1s
+
+
+@-webkit-keyframes animatebottom 
+	from
+		bottom: -100px 
+			opacity: 0 
+			 
+	to
+		bottom: 0px 
+			opacity: 1
+			 
+
+
+@keyframes animatebottom 
+	from 
+		bottom: -100px
+			opacity: 0  
+	to
+		bottom: 0
+			opacity: 1 
+
+
+#myDiv 
+	display: none
+
+
+// slider-dots
+.carousel-indicators
+	left: 5%
+	top: 100%
+	width: 54%
+	padding-left: 80px
+
+.carousel-indicators li
+	width: 33px
+	height: 7px
+	background-color: #663cfc
+	border: none
+	border-radius: 2px
+
+.carousel-indicators .active
+	width: 33px
+	height: 7px
+	background-color: #fff
+	border: none
+	border-radius: 2px
+.navbar
+	font-size: 14px
+	height: 0
+	color: #fff
+	z-index: 2
+	background: transparent
+	border: none
+	position: absolute
+	background: #284077
+	top: 0
+	left: 0
+	right: 0
+	border-bottom: 1px solid rgba(163, 134, 255, 0.20)
+	padding-bottom: 87px
+	position: fixed
+	z-index: 9999
+	border-radius: 0
+.navbar-header .logo-phon
+	text-transform: uppercase
+	font-family: 'Orbitron', sans-serif
+	font-size: 20px
+	color: #fff
+	margin-top: 15px
+	margin-left: 20px
+	display: inline-block
+	text-decoration: none
+	display: none
+	
+.navbar .brand
+	float: left
+	width: 40%
+
+
+	a
+		text-transform: uppercase
+		font-family: 'Orbitron', sans-serif
+		font-size: 30px
+		color: #fff
+		margin-top: 25px
+		display: inline-block
+		text-decoration: none
+
+
+.navbar .links
+	margin-top: 25px
+.navbar .links li
+	display: block
+	text-transform: uppercase
+	cursor: pointer
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+	background: #fff
+	color: $lite-blue
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+
+.navbar .links li a //.....................................................................
+	color: #fff
+	text-decoration: none
+	padding: 3px 18px
+	margin-top: 10px
+	border-radius: 10px
+	margin-right: 10px
+	transition: 0.16s
+
+.navbar .links li:hover a
+	background: #fff
+	color: $lite-blue
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+
+
+
+
+.hero-section
+	height: 105vh
+	background-image: linear-gradient(to right bottom, #051937, #0a254b, #103161, #173e77, #1e4b8e)
+	position: relative
+	color: #fff
+	overflow: hidden
+	.content
+		position: absolute
+		top: 40%
+		left: 50%
+		transform: translate(-50%, -50%)
+		.contact-me a i
+			color: #fff
+			font-size: 25px
+			margin-top: 50px
+			margin-right: 20px
+
+		h1
+			font-size: 40px
+			line-height: 50px
+		p
+			font-size: 20px
+			line-height: 40px
+			margin-bottom: 50px
+			a
+				color: #fff
+				text-decoration: underline
+				margin-left: 20px
+			a:hover
+				color: #ddd
+		.button
+			border: none
+			text-decoration: none
+			user-select: none
+			background: #fff
+			color: $lite-blue
+			padding: 10px 35px
+			margin-right: 10px
+			border-radius: 3px
+			box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+	img
+		opacity: 0.1
+		height: 1000px
+		right: -429px
+		top: 10%
+		position: absolute
+		// z-index: 1
+	.overlay
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background: rgba(70, 95, 152, 0.48)
+
+
+	.features:before     //curved div
+		content: ""
+		position: absolute
+		left: 0
+		right: 0
+		bottom: -90px
+		height: 200px
+		background: #fff
+		transform: skew(0,5deg)
+		z-index: 0
+
+		
+
+
+
+
+// start my-project 
+.my-project
+	// padding: 100px 0
+	text-align: center
+	span
+		text-transform: uppercase
+	.cards
+		display: flex
+		flex-wrap: wrap
+		padding: 100px 0
+		.card
+			background-color: #000
+			flex-basis: calc(33.333% - 20px)
+			display: inline-block
+			background-color: #fff
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+			margin: 10px
+			border-radius: 4px
+			overflow: hidden
+			margin-bottom: 40px
+			img
+				width: 100%
+			.content
+				padding: 15px
+				span
+					background-color: #3498db
+					box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+					color: #fff
+					padding: 0 5px
+					margin-bottom: 50px
+					// border-radius: 3px
+				h3
+					margin: 0
+					font-size: 20px
+					margin-bottom: 30px
+					margin-top: 30px
+				a
+					color: #fff
+					background-color: #3498db
+					padding: 3px
+					text-decoration: none
+					border-radius: 5px
+					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+					transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+				a:hover
+					box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+			.image
+				position: relative
+
+
+
+
+
+// .navbar .links li:hover a
+
+// end my-project 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// start skills
+.skills
+	text-align: center
+	.icons
+		width: 19%
+		display: inline-block
+		margin: 100px 0
+		span
+			display: block
+			padding: 20px 0
+		img
+			filter: grayscale(100%)
+			width: 70px
+			height: 70px
+			transition: all 0.3s 
+
+
+
+
+		img:hover
+			cursor: pointer
+			filter: grayscale(0)
+			// filter: grayscale(0) drop-shadow (0 1px 3px  rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+			// box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+
+// end skills
+
+
+
+
+// footer
+
+
+
+.hero-section-tow
+	// height: 900px
+	// width: 100
+	background-image: linear-gradient(to right bottom, #051937, #0a254b, #103161, #173e77, #1e4b8e)
+	position: relative
+	color: #e3daff
+	overflow: hidden
+	padding: 170px 0
+	img
+		opacity: 0.1
+		height: 1000px
+		right: -429px
+		top: 10%
+		position: absolute
+	.features-tow:before     
+		content: ""
+		position: absolute
+		left: 0
+		right: 0
+		top: -108px
+		height: 348px
+		background: #fff
+		transform: skew(0,-4deg)
+		z-index: 0
+	.content
+		text-align: left
+		.footer
+			position: absolute
+			padding: 30px 0
+			bottom: 0
+			text-align: center
+			.contact
+				p
+					position: absolute
+					bottom: -50
+					left: 100px
+
+
+
+
+
+// media 
+
+
+@media (max-width: 480px)
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form
+		background-color: #284077
+	.navbar .brand
+		float: none
+	.navbar
+		border-bottom: 0px solid #a386ff
+
+	.hero-section
+		height: 1000px
+		text-align: center
+
+	.hero-section .content
+		top: 40%
+	.hero-section .content h1
+		font-size: 25px
+	.hero-section .content .button.button
+		padding: 5px 10px
+		margin-left: 10px
+	.my-project .cards-tow .cadr-tow .paragraph a
+		margin-right: 138px
+	.skills .icons
+		width: 100%
+		margin: 25px 0	
+
+	.hero-section .services .left
+		position: absolute
+		right: 10px
+		top: -610px
+		height: 540px
+	.navbar-header .logo-phon
+		display: block
+	.navbar .brand a
+		display: none
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form
+		height: 70vh
+	.navbar .links li a
+		text-align: center
+		padding: 40px 0px
+	.navbar-toggle
+		border: none
+		padding: 15px 10px
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
+		border: none
+		background-color: #284077
+	.navbar-default .navbar-toggle .icon-bar
+		background-color: #fff
+	.hero-section .content h1
+		width: 100vw
+
+
+
+	.contact-me a i
+		padding: 0 0 0 15px
+
+// @media (min-width: 992px)
+// 	.col-md-4
+// 		width: 480px

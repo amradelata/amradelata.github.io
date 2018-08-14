@@ -1,0 +1,224 @@
+$primary-color: #ffd740
+$lite-blue: #28c8c6
+
+
+*
+	box-sizing: border-box
+
+body
+	padding: 0
+	margin: 0
+	font-family: 'Roboto Condensed', sans-serif
+	// background: red	
+	// height: 6000px
+h1
+	margin: 0
+
+
+// start fixed menu
+.fixed-menu
+	padding: 10px
+	position: fixed
+	right: -240px
+	top: 0
+	height: 100% 
+	width: 240px
+	z-index: 9999
+	background: #fff
+	color: #333
+	h2
+		color: #ffd83f
+		font-weight: bold
+		font-size: 25px
+	.link
+		display: block
+		text-decoration: none
+		color: #333
+		transition: 0.60s
+		padding: 20px
+	.link:hover
+		background: #f1f2f6
+	.fa-bars
+		position: absolute
+		left: -27px
+		top: 35px
+		background: #fff
+		color: #333
+		width: 30px
+		height: 30px
+		line-height: 30px
+		text-align: center
+		border-radius: 10px 0 0 10px
+		cursor: pointer
+// end fixed menu
+
+.hero-section .hero .content .h1
+	margin-top: 40px
+	color: $primary-color
+.hero-section .hero .content h2
+	text-align: center
+	margin-top: 300px
+	margin-bottom: -250px
+	font-size: 40px
+	text-transform: uppercase
+
+.gallery
+	.overlay
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		background-color: rgba(59, 64, 69, 0.84)
+		opacity: 0
+		h1
+			color: #fff
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			display: block
+			span
+				color: $primary-color
+				font-size: 20px
+				display: block
+				// text-align: center
+
+	// .italy1,
+	// .italy2,
+	// .italy3,
+	// .italy4,
+	// .italy5,
+	// .italy6,
+	// .italy7,
+	// .italy8:hover.overlay
+	// 	opacity: 1
+
+
+	.italy1:hover .overlay
+		opacity: 1
+		transition: 0.30s
+		cursor: pointer
+	.italy2:hover .overlay
+		opacity: 1
+		transition: 0.30s
+		cursor: pointer
+	.italy3:hover .overlay
+		opacity: 1
+		transition: 0.30s
+		cursor: pointer
+	.italy4:hover .overlay
+		opacity: 1
+		transition: 0.30s
+		cursor: pointer
+	.italy5:hover .overlay
+		opacity: 1
+		transition: 0.30s
+		cursor: pointer
+	.italy6:hover .overlay
+		opacity: 1
+		transition: 0.30s
+		cursor: pointer
+	.italy7:hover .overlay
+		opacity: 1
+		transition: 0.30s
+		cursor: pointer
+	.italy8:hover .overlay
+		opacity: 1
+		transition: 0.30s
+		cursor: pointer
+
+
+
+	.italy1
+		position: relative
+		background-image: url('../img/gallery/2.png')
+		height: 820px
+		background-size: cover
+		margin-top: 100px
+		background-position: center center
+	.italy2
+		position: relative
+		background-image: url('../img/gallery/3.png')
+		height: 400px
+		background-size: cover
+		margin-top: 100px
+		margin-bottom: 20px
+		background-position: center center
+	.italy3
+		position: relative
+		background-image: url('../img/gallery/4.png')
+		height: 400px
+		background-size: cover
+		background-position: center center
+
+	.italy4
+		position: relative
+		background-image: url('../img/gallery/5.png')
+		height: 1000px
+		background-size: cover
+		margin-top: 50px
+		background-position: center center
+	.italy5
+		position: relative
+		background-image: url('../img/gallery/6.png')
+		height: 400px
+		background-size: cover
+		// margin-top: 100px
+		margin-bottom: 20px
+		background-position: center center
+
+	.italy6
+		position: relative
+		background-image: url('../img/gallery/7.png')
+		height: 400px
+		background-size: cover
+		background-position: center center
+		// margin-top: 100px
+	.italy7
+		position: relative
+		background-image: url('../img/gallery/8.png')
+		height: 820px
+		background-size: cover
+		background-position: center center
+	.italy8
+		position: relative
+		background-image: url('../img/gallery/9.png')
+		height: 1000px
+		background-size: cover
+		background-position: center center
+		margin-top: 50px
+
+
+	p
+		text-align: center
+		font-size: 25px
+		padding: 100px 0
+
+
+a
+	color: #263238
+	font-size: 25px
+	border-bottom: 2px solid $primary-color
+	text-align: center
+	margin: auto
+
+
+
+
+@media (max-width: 480px)
+
+	.hero-section .hero .content .h1
+		font-size: 30px
+
+	.hero-section .hero .content h2
+		margin-top: 100px
+
+	.gallery .italy6
+		margin-bottom: 20px
+
+
+
+// <h2>Italy<br>
+// <span>It’s Mediterranean coastline gives it a powerful mark on Western culture and <br>cuisine. Italy is home landmark art and ancient ruins. In this Autust, I enjoyed<br> the beauty of Italy.</span>
+// </h2>

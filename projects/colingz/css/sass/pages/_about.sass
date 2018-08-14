@@ -1,0 +1,306 @@
+$primary-color: #ffd740
+$lite-blue: #28c8c6
+
+
+*
+	box-sizing: border-box
+
+body
+	padding: 0
+	margin: 0
+	font-family: 'Roboto Condensed', sans-serif
+	background: #f5f5f5	
+	color: #6e767a
+	height: 0
+h1
+	margin: 0
+
+// start fixed menu
+.fixed-menu
+	padding: 10px
+	position: fixed
+	right: -240px
+	top: 0
+	height: 100% 
+	width: 240px
+	z-index: 9999
+	background: #fff
+	color: #333
+	h2
+		color: #ffd83f
+		font-weight: bold
+		font-size: 25px
+	.link
+		display: block
+		text-decoration: none
+		color: #333
+		transition: 0.60s
+		padding: 20px
+	.link:hover
+		background: #f1f2f6
+	.fa-bars
+		position: absolute
+		left: -27px
+		top: 35px
+		background: #fff
+		color: #333
+		width: 30px
+		height: 30px
+		line-height: 30px
+		text-align: center
+		border-radius: 10px 0 0 10px
+		cursor: pointer
+// end fixed menu
+
+.hero-section
+	position: relative
+	nav
+		position: absolute
+		z-index: 9998
+		width: 80%
+	h1
+		margin: 0
+		display: inline-block
+		color: $primary-color
+		margin-top: 35px
+	span
+		font-size: 20px
+		color: #fff
+		cursor: pointer
+
+.hero-section
+	position: relative
+	background-size: cover
+	background-position: center, center
+	.overlay
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background: rgba(38, 50, 56, 0.71)
+		width: 100%
+		height: 100%
+	.hero
+		.content
+			.top
+				position-absolute
+				// top: 50%
+				font-size: 40px
+				margin: 0
+				margin-top: 300px
+				margin-bottom: -200px
+				text-transform: uppercase
+				text-align: center
+			span
+				font-size: 20px
+
+			.icons
+				display: inline-block
+				margin: 0
+				float: right
+				margin-top: 60px
+				i
+					font-size: 20px
+					margin-right: 35px
+					cursor: pointer
+				i:hover
+					color: $primary-color
+			.bottom
+				margin-top: 50%
+				.right
+					// float: right
+					text-align: right
+				h3
+					display: inline-block
+					// margin-left: 50px
+					
+				img
+					width: 30px
+
+
+.about-me
+	.padding
+		padding: 100px 0
+		padding-right: 25px
+	p
+		font-size: 18px
+		a
+			color: $primary-color
+			text-decoration: none
+	h4
+		color: $primary-color
+		font-size: 25px
+		margin-top: 35px
+		margin-bottom: 35px
+
+
+
+	.background
+		background: $primary-color
+		img
+			width: 100%
+		h1
+			margin-bottom: 35px
+			margin-top: 100px
+			// padding-bottom: 15px
+		.position
+			position: relative
+		.icons
+			position: absolute
+			bottom: 273px
+			right: 240px
+			font-size: 20px
+			color: #fff
+			i
+				margin-right: 10px
+				transition: 0.16s
+				cursor: pointer
+			i:hover
+				color: $primary-color
+		.margin-top
+			margin-top: 35px
+// graph
+.graph
+	.quit-rate
+		padding-top: 100px 
+		.df
+			padding-left: 190px
+
+			a
+				color: #546e7a
+				margin-right: 20px
+				margin-top: 25px
+				// margin-bottom: 0
+				text-decoration: none
+				// border: none
+		p
+			margin-top: 50px
+			font-size: 20px
+			margin-bottom: 50px
+.graph img
+	width: 100%
+
+.kj
+	.ylo
+		color: $primary-color
+		margin-left: 10px
+.like
+	// display: flex
+	.center
+		text-align: center
+		margin: auto
+		// position: absolute
+		// bottom: 0
+	h2
+		color: #000
+		float: right
+		border-bottom: 2px solid $primary-color
+		// margin-bottom: 35px
+		// padding-bottom: 20px
+	p
+		margin-top: 50px
+		font-size: 20px
+		margin-bottom: 50px
+
+	img
+		width: 20px
+		margin-right: 20px
+		margin-left: 10px	
+		cursor: pointer
+		// background: red
+	textarea
+		width: 100%
+		border: none
+		background: #fff
+		padding: 50px 10px
+		margin-top: 50px
+		outline: none
+	.left
+		display: inline-block
+		margin-top: 100px
+		margin-bottom: 50px
+	.right
+		display: inline-block
+		margin-top: 100px
+		float: right
+		// font-size: 16px
+		margin-bottom: 50px
+	.white-background
+		background: #fff
+		padding: 1px 25px
+		margin-top: 50px
+		span
+			display: block
+			float: right
+			font-size: 16px
+			color: #000
+			margin-top: 40px
+			
+
+
+.foter
+	background-color: #263238
+	color: #fff
+	padding: 100px 0
+	h1
+		font-weight: bold
+		font-size: 40px
+	span
+		font-weight: bold
+		color: $primary-color
+		font-size: 40px
+		margin: 0
+	h3
+		margin: 0
+		margin-top: 7px
+		margin-bottom: 30px
+	i
+		margin-right: 30px
+		font-size: 25px
+		color: #546e7a
+	i:hover
+		color: $primary-color
+
+	input
+		background-color: #263238
+		border: 1px solid #4e595f
+		border-radius: 3px
+		padding: 7px 20px
+		outline: 0
+		display: block
+		margin-bottom: 25px
+	p
+		color: #546e7a
+
+
+
+@media (max-width: 480px)
+
+	.hero-section nav .icons
+		display: block
+		right: 0
+		top: 100px
+	.hero-section .hero .content .bottom
+		display: none
+		
+	.hero-section .hero .content .top
+		margin-top: 200px
+ 
+	.about-me p
+		padding: 0 10px
+
+	.about-me p a
+		padding-bottom: 2px
+
+	.about-me h4
+		padding: 0 10px
+
+	.about-me .background .icons
+		right: 165px 
+
+	.graph .quit-rate .df
+		display: none
+
+	.like h2
+		float: left

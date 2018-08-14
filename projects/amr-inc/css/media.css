@@ -1,0 +1,24 @@
+/*smart phon and tablets*/
+
+	@media (max-width:767px)
+	{
+		.navbar-inverse .navbar-nav > li > a
+		{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}	
+
+		.btn-lg, .btn-group-lg > .btn
+		{
+			margin-top: 10px;
+		}
+		.navbar-fixed-top .navbar-collapse,
+		 .navbar-fixed-bottom .navbar-collapse
+		{    max-height: none;}
+	}
+/*small screen*/
+
+@media (min-width:768px)
+	{
+
+	}

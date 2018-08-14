@@ -1,0 +1,59 @@
+.navbar-inverse .navbar-nav > .active > a
+, .navbar-inverse .navbar-nav > .active > a:hover
+, .navbar-inverse .navbar-nav > .active > a:focus
+{
+	background-color:#666;
+}
+
+
+.navbar-inverse .navbar-brand span
+{
+	color:#666;
+}
+
+
+.dropdown-menu
+{
+	border-top: 3px solid:#666;
+}
+
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus
+{
+	background-color:#666;
+}
+
+
+.about h1 span
+{
+	color:#666;
+}
+
+.testimonials span
+{
+	color:#666;
+}
+
+.footer h3
+{
+	color:#666;
+}
+
+.footer .copyright span
+{
+	color:#666;
+}
+.option-box .gear-check
+{
+	color:#666;
+}
+.option-box .color-option
+{
+	border: 5px solid:#666;
+} 
+
+.carousel-inner h1
+{
+	color:#666;
+}

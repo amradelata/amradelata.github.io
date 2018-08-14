@@ -1,0 +1,59 @@
+.navbar-inverse .navbar-nav > .active > a
+, .navbar-inverse .navbar-nav > .active > a:hover
+, .navbar-inverse .navbar-nav > .active > a:focus
+{
+	background-color:#E91E63;
+}
+
+
+.navbar-inverse .navbar-brand span
+{
+	color:#E91E63;
+}
+
+
+.dropdown-menu
+{
+	border-top: 3px solid:#E91E63;
+}
+
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus
+{
+	background-color:#E91E63;
+}
+
+
+.about h1 span
+{
+	color:#E91E63;
+}
+
+.testimonials span
+{
+	color:#E91E63;
+}
+
+.footer h3
+{
+	color:#E91E63;
+}
+
+.footer .copyright span
+{
+	color:#E91E63;
+}
+.option-box .gear-check
+{
+	color:#E91E63;
+}
+.option-box .color-option
+{
+	border: 5px solid:#E91E63;
+} 
+
+.carousel-inner h1
+{
+	color:#E91E63;
+}

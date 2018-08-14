@@ -1,0 +1,619 @@
+$primary-color: #ffd740
+$lite-blue: #28c8c6
+
+
+*
+	box-sizing: border-box
+
+body
+	padding: 0
+	margin: 0
+	font-family: 'Roboto Condensed', sans-serif
+	background: red	
+	// display: none
+	height: 6000px
+h1
+	margin: 0
+// start fixed menu
+.fixed-menu
+	padding: 10px
+	position: fixed
+	right: -240px
+	top: 0
+	height: 100% 
+	width: 240px
+	z-index: 9999
+	background: #fff
+	color: #333
+	text-align: center
+	h2
+		color: #ffd83f
+		font-weight: bold
+		font-size: 25px
+	.link
+		display: block
+		text-decoration: none
+		color: #333
+		transition: 0.60s
+		padding: 20px
+	.link:hover
+		background: #f1f2f6
+
+	.fa-bars
+		position: absolute
+		left: -27px
+		top: 35px
+		background: #fff
+		color: #333
+		width: 30px
+		height: 30px
+		line-height: 30px
+		text-align: center
+		border-radius: 10px 0 0 10px
+		cursor: pointer
+// end fixed menu
+.hero-section
+	position: relative
+	nav
+		position: absolute
+		z-index: 9998
+		width: 80%
+.hero-section nav .h2  //.....................................
+	position: absolute
+	left: 85px
+	top: 25px
+	color: #ffd83f
+	font-weight: bold
+	font-size: 30px	
+	margin-top: 40px
+	text-transform: none
+	display: inline-block
+	margin: auto
+.hero-section .hero
+	background-position: right
+.hero-section nav .icons
+	position: absolute
+	margin-top: 40px
+	display: inline-block
+	color: #fff
+	right: -240px
+	top: 0
+	i
+		font-size: 20px
+		margin-right: 20px
+		cursor: pointer
+		transition: 0.16s
+
+	i:hover
+		color: $primary-color
+
+.hero-section .hero .content h1
+	color: #fff
+	font-size: 45px
+	font-weight: bold
+	margin-top: 430px
+	margin-bottom: 0
+	padding-bottom: 0
+
+
+.hero-section	
+	.hero
+		height: 100vh
+		color: #fff
+		background-size: cover
+		background-repeat: no-repeat
+		.content2
+			text-align: right
+			// .icons
+			// 	margin-top: 40px
+			// 	i
+			// 		font-size: 20px
+			// 		margin-right: 20px
+			// 		cursor: pointer
+			// 		transition: 0.16s
+
+			// 	i:hover
+			// 		color: $primary-color
+			h1
+				font-size: 45px
+				margin-top: 430px
+				padding-bottom: 15px
+				color: #fff
+				font-weight: bold
+			p
+				font-size: 18px
+				margin-bottom: 30px
+
+			a
+				color: #fff
+				text-decoration: none
+				font-size: 25px
+				color: $primary-color
+			a:hover
+				color: #fff
+
+
+		.content
+			// text-align: center
+			// h2
+			// 	margin: 0
+			// 	color: $primary-color
+			// 	margin-top: 35px
+			// 	margin-bottom: 430px
+			// h1
+			// 	font-size: 100px
+			// 	padding-bottom: 15px
+
+			p
+				font-size: 18px
+				margin-bottom: 30px
+
+			button
+				background: transparent
+				border: none
+				border-bottom: 2px solid #fff
+				color: $primary-color
+				font-size: 25px
+				transition: 0.16s
+			button:hover
+				color: #fff
+
+// what-i-can-do
+
+
+
+.hero-section2
+	background: $primary-color
+	height: 100vh
+
+.what-i-can-do
+	background: $primary-color
+	// height: 100vh
+	color: #263238
+
+	h1
+		margin-bottom: 35px
+		padding-bottom: 15px
+	.position
+		position: relative
+	.icons
+		position: absolute
+		bottom: 185px
+		right: 170px
+		font-size: 20px
+		color: #fff
+		i
+			margin-right: 10px
+			transition: 0.16s
+			cursor: pointer
+
+		i:hover
+			color: $primary-color
+	.margin-top
+		margin-top: 35px
+.what
+	// padding-top: 100px 
+	margin-top: 80px
+	h1
+		font-size: 30px
+		border-bottom: 3px solid #fff
+		width: 43%
+		// padding-bottom: 15px
+.skills
+	margin-bottom: 50px
+	.skill
+		margin-bottom: 95px
+	img
+		// display: inline-block
+		vertical-align: bottom
+		margin-right: 20px
+	.paragraph
+		display: inline-block
+	p
+		display: inline-block
+	h4
+		// display: inline-block
+		margin: 0
+		margin-bottom: 10px
+		padding-bottom: 15px
+		font-size: 18px
+
+.timeline
+	height: 618px
+	background-position: center, center
+	background-size: cover
+	// padding: 200px 0
+	position: relative
+	color: #fff
+	.overlay
+		position: absolute
+		// padding: 200px 0
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background: rgba(38, 50, 56, 0.95)
+		.content
+			padding: 100px 0
+
+		.the-timeline
+			position: relative
+			// padding: 100px 0
+
+		h4
+			color: $primary-color
+			font-size: 30px
+			border-bottom: 3px solid #fff
+			width: 20%
+			padding-bottom: 15px
+		h1
+			position: absolute
+			top: 300%
+			left: 50%
+			color: $primary-color
+			font-size: 70px
+			transform: translate(-50%, -50%)
+			padding-bottom: 15px
+
+	.logo
+		span
+			display: block
+			color: $primary-color
+			font-size: 20px
+			text-transform: uppercase
+			margin-top: 15px
+		h5
+			margin: 0
+			margin-top: 10px
+			font-size: 20px
+		p
+			margin: 0
+			margin-top: 25px
+			font-size: 20px
+
+		button
+			background: transparent
+			border: none
+			color: $primary-color
+			font-size: 18px
+			margin-top: 20px
+.testimonial
+	background: #f5f5f5
+	.cards
+		display: flex
+		flex-wrap: wrap
+		padding: 100px 0
+		.card
+			display: inline-block
+			flex-basis: calc(33.333% - 20px)
+			// box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+			transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+			border-radius: 2px
+			margin: 10px
+			height: 200px
+			padding: 30px 17px
+			color: #7e8f97
+			cursor: pointer
+		.card:hover
+			color: #000
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+			background: #fff
+		.card:hover span
+			color: #4861AF
+		.card:hover i
+			color: #4861AF
+		i
+			font-size: 20px
+			margin-bottom: 10px
+
+		.date
+			display: block
+		span
+			font-size: 18px
+			margin-right: 20px
+		p
+			margin-top: 10px
+			line-height: 30px
+
+.travel
+	background: $primary-color
+	padding: 100px 0
+	position: relative
+	h1
+		font-size: 30px
+		border-bottom: 3px solid #fff
+		width: 18%
+		margin-bottom: 35px
+		padding-bottom: 15px
+
+
+	.memory
+		width: 30%
+		height: 500px
+		margin-right: 3%
+		background-position: center, center
+		background-size: cover
+		position: relative
+		cursor: pointer
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+		.overlay
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: #374246
+			opacity: 0
+			transition: 0.26s
+		.overlay:hover
+			opacity: 0.8
+			.content
+				position: absolute
+				bottom: 30px
+				left: 30px
+				h3
+					color: #fff
+					font-size: 24px
+				span
+					color: #fff
+				a
+					display: block
+					color: $primary-color
+					margin-top: 20px
+
+.travel .a
+	width: 30px
+	position: absolute
+	left: 80px
+	cursor: pointer
+
+.travel .b
+	width: 30px
+	position: absolute
+	right: 80px
+	cursor: pointer
+	
+
+.journal
+	background: #f5f5f5
+	padding: 100px 0
+	h1
+		border-bottom: 3px solid $primary-color
+		width: 18%
+		padding-bottom: 15px
+		margin-bottom: 50px
+	.cards 
+		flex-wrap: wrap
+		.card
+			flex-basis: calc(33.333% - 20px)
+			display: inline-block
+			background-color: #fff
+			margin: 10px
+			height: 500px
+			img
+				width: 100%
+		.paragraph
+			padding: 10px 20px
+			h3
+				font-size: 27px
+				font-weight: bold
+			span
+				margin-right: 25px
+
+			img
+				width: 15px
+				cursor: pointer
+				margin-right: 15px
+			p
+				margin-top: 20px
+.parag
+	background: #fff
+	padding: 10px 20px
+	// display: inline-block
+	height: 250px
+	margin-bottom: 20px
+	h3
+		font-size: 27px
+		font-weight: bold
+	span
+		margin-right: 25px
+	img
+		width: 15px
+		cursor: pointer
+		margin-right: 15px
+	p
+		margin-top: 20px
+.vertical
+	height: 500px
+	position: relative
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+	.overlay
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background: #374246
+		opacity: 0
+		transition: 0.26s
+	.overlay:hover
+		opacity: 0.8
+	.parag-img
+		// background: #516269
+		padding: 10px 10px
+		color: #fff
+		height: 250px
+		h3
+			font-size: 27px
+			font-weight: bold
+		span
+			margin-right: 25px
+		img
+			width: 15px
+			cursor: pointer
+			margin-right: 15px
+		p
+			margin-top: 20px
+		a
+			color: $primary-color	
+
+
+.gools
+	background-color: $primary-color
+	padding: 100px 0
+	// margin-top: 100px
+	img
+		display: flex
+		margin: auto
+	.paragraph
+		text-align: center
+
+.foter
+	background-color: #263238
+	color: #fff
+	padding: 100px 0
+	h1
+		font-weight: bold
+		font-size: 40px
+	span
+		font-weight: bold
+		color: $primary-color
+		font-size: 40px
+		margin: 0
+	h3
+		margin: 0
+		margin-top: 7px
+		margin-bottom: 30px
+	i
+		margin-right: 30px
+		font-size: 25px
+		color: #546e7a
+	i:hover
+		color: $primary-color
+
+	input
+		background-color: #263238
+		border: 1px solid #4e595f
+		border-radius: 3px
+		padding: 7px 20px
+		outline: 0
+		display: block
+		margin-bottom: 25px
+	p
+		color: #546e7a
+
+
+@media (max-width: 480px)
+
+	.hero-section nav .icons
+		display: block
+		right: 0
+		top: 100px
+
+	.hero-section nav .h2
+		left: 9px
+	.hero-section .hero .content h1
+		margin-top: 180px
+
+	.hero-section .hero .content button
+		outline: none
+
+	.hero-section .hero .content
+		text-align: center
+
+	.hero-section .hero .content2
+		text-align: center
+
+	.hero-section .hero .content2 h1
+		margin-top: 100px
+
+	.skills .skill
+		text-align: center
+
+	.skills img
+		margin-bottom: 30px
+
+	.timeline .overlay .content
+		text-align: center
+
+	.timeline .overlay h4
+		margin: auto
+		margin-top: 25px
+
+	.what h1
+		width: 80%
+		margin: auto
+		margin-bottom: 50px
+	.what-i-can-do .position
+		width: 100%
+
+	.what-i-can-do .icons
+		bottom: 265px
+		right: 150px
+
+	.what-i-can-do
+		padding: 0
+	.timeline
+		height: 700px
+	.timeline .overlay .content
+		padding: 0 20px
+	.timeline .overlay h1
+		display: none
+
+	.timeline .overlay h4
+		width: 44%
+
+	.timeline .logo img
+		margin-top: 50px
+		margin-bottom: 50px
+
+	.testimonial .cards .card
+		flex-basis: calc(100% - 20px)
+		height: 230px
+	.travel h1
+		width: 70%
+		margin: auto
+		margin-bottom: 50px
+
+	.travel .memory
+		width: 100%
+		margin-bottom: 35px
+
+	.journal h1
+		width: 63%
+		margin: auto
+		margin-bottom: 50px
+
+	.parag
+		padding: 0 10px
+
+	.what
+		padding: 25px 0
+
+	.vertical
+		height: 580px
+		margin-top: 50px
+
+
+
+
+	
+	.vertical .parag-img p
+		margin-top: 10px
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+// twter #2B9BEE
+// face #4861AF
