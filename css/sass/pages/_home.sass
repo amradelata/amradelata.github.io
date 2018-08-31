@@ -188,6 +188,7 @@ body
 			margin-top: 50px
 			margin-right: 20px
 
+
 		h1
 			font-size: 40px
 			line-height: 50px
@@ -217,7 +218,7 @@ body
 		right: -429px
 		top: 10%
 		position: absolute
-		// z-index: 1
+				// z-index: 1
 	.overlay
 		position: absolute
 		top: 0
@@ -225,6 +226,32 @@ body
 		bottom: 0
 		right: 0
 		background: rgba(70, 95, 152, 0.48)
+
+	.pop-up
+		font-size: 25px
+		cursor: pointer
+		position: relative
+		display: inline-block
+
+	.am
+		-webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0 48%)
+		clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0 48%)
+		border-radius: 3px
+		position: absolute
+		left: 35px
+		top: -10px
+		width: 180px
+		height: 50px
+		font-size: 15px
+		background-color: #fff
+		color: #0a5ae3
+		opacity: 0
+		transition: 0.30s
+		h6
+			text-align: center
+			margin-left: 40px
+	.pop-up:hover .am
+		opacity: 1
 
 
 	.features:before     //curved div
@@ -245,7 +272,6 @@ body
 
 // start my-project 
 .my-project
-	// padding: 100px 0
 	text-align: center
 	span
 		text-transform: uppercase
@@ -263,68 +289,60 @@ body
 			border-radius: 4px
 			overflow: hidden
 			margin-bottom: 40px
-			img
-				width: 100%
+			.image
+				position: relative
+				img
+					width: 100%
+				.ovarlay
+					position: absolute
+					top: 0
+					right: 0
+					left: 0
+					bottom: 0
+					background-color: #fff
+					opacity: 0
+					transition: 0.30s
+				.ovarlay:hover
+					opacity: 0.9
+					p
+						color: #fff
+						background-color: #3498db
+						padding: 3px 5px
+						text-decoration: none
+						border-radius: 3px
+						display: inline-block
+						margin-top: 30%
 			.content
-				padding: 15px
-				span
-					background-color: #3498db
-					box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
-					color: #fff
-					padding: 0 5px
-					margin-bottom: 50px
-					// border-radius: 3px
+				padding: 50px 0
+
 				h3
 					margin: 0
-					font-size: 20px
-					margin-bottom: 30px
-					margin-top: 30px
+					font-size: 25px
+					margin-bottom: 15px
 				a
+					display: inline-block
+					padding: 6px 12px
+					margin-bottom: 0
+					font-size: 14px
+					font-weight: 400
+					line-height: 1.42857143
+					text-align: center
+					white-space: nowrap
+					vertical-align: middle
+					cursor: pointer
+					user-select: none
+					background-image: none
+					border: 1px solid transparent
+					border-radius: 4px
 					color: #fff
 					background-color: #3498db
-					padding: 3px
+					// border-color: #2e6da4
 					text-decoration: none
-					border-radius: 5px
 					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
 					transition: all 0.3s cubic-bezier(.25,.8,.25,1)
 				a:hover
 					box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
-			.image
-				position: relative
-
-
-
-
-
-// .navbar .links li:hover a
-
 // end my-project 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // start skills
 .skills
@@ -333,26 +351,23 @@ body
 		width: 19%
 		display: inline-block
 		margin: 100px 0
-		span
-			display: block
-			padding: 20px 0
-		img
+		.aa
 			filter: grayscale(100%)
 			width: 70px
 			height: 70px
-			transition: all 0.3s 
+			transition: all 0.30s
+		.hid
+			display: block
+			padding: 20px 0
 
 
-
-
-		img:hover
-			cursor: pointer
+		.aa:hover
 			filter: grayscale(0)
-			// filter: grayscale(0) drop-shadow (0 1px 3px  rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
-			// box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+			transform: translate(0,20px)
+			cursor: pointer
+		
 
 // end skills
-
 
 
 
@@ -361,8 +376,6 @@ body
 
 
 .hero-section-tow
-	// height: 900px
-	// width: 100
 	background-image: linear-gradient(to right bottom, #051937, #0a254b, #103161, #173e77, #1e4b8e)
 	position: relative
 	color: #e3daff
@@ -394,9 +407,12 @@ body
 			.contact
 				p
 					position: absolute
-					bottom: -50
 					left: 100px
+					// display: block
 
+			.contact-2
+				span
+					display: block
 
 
 
@@ -456,10 +472,23 @@ body
 	.hero-section .content h1
 		width: 100vw
 
-
+	.my-project .cards .card
+		flex-basis: calc(100% - 20px)
 
 	.contact-me a i
 		padding: 0 0 0 15px
+
+	.my-project .cards .card .content a
+		display: block
+		margin-bottom: 10px
+	.hero-section-tow
+		padding: 220px 0
+
+	.hero-section-tow .content .footer .contact-2 span
+		margin: 50px 24px 29px 
+	.hero-section-tow .content .footer
+		// padding: 50px
+
 
 // @media (min-width: 992px)
 // 	.col-md-4

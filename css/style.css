@@ -197,6 +197,30 @@ body {
     bottom: 0;
     right: 0;
     background: rgba(70, 95, 152, 0.48); }
+  .hero-section .pop-up {
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block; }
+  .hero-section .am {
+    -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0 48%);
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0 48%);
+    border-radius: 3px;
+    position: absolute;
+    left: 35px;
+    top: -10px;
+    width: 180px;
+    height: 50px;
+    font-size: 15px;
+    background-color: #fff;
+    color: #0a5ae3;
+    opacity: 0;
+    transition: 0.3s; }
+    .hero-section .am h6 {
+      text-align: center;
+      margin-left: 40px; }
+  .hero-section .pop-up:hover .am {
+    opacity: 1; }
   .hero-section .features:before {
     content: "";
     position: absolute;
@@ -226,33 +250,57 @@ body {
       border-radius: 4px;
       overflow: hidden;
       margin-bottom: 40px; }
-      .my-project .cards .card img {
-        width: 100%; }
+      .my-project .cards .card .image {
+        position: relative; }
+        .my-project .cards .card .image img {
+          width: 100%; }
+        .my-project .cards .card .image .ovarlay {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background-color: #fff;
+          opacity: 0;
+          transition: 0.3s; }
+        .my-project .cards .card .image .ovarlay:hover {
+          opacity: 0.9; }
+          .my-project .cards .card .image .ovarlay:hover p {
+            color: #fff;
+            background-color: #3498db;
+            padding: 3px 5px;
+            text-decoration: none;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 30%; }
       .my-project .cards .card .content {
-        padding: 15px; }
-        .my-project .cards .card .content span {
-          background-color: #3498db;
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-          color: #fff;
-          padding: 0 5px;
-          margin-bottom: 50px; }
+        padding: 50px 0; }
         .my-project .cards .card .content h3 {
           margin: 0;
-          font-size: 20px;
-          margin-bottom: 30px;
-          margin-top: 30px; }
+          font-size: 25px;
+          margin-bottom: 15px; }
         .my-project .cards .card .content a {
+          display: inline-block;
+          padding: 6px 12px;
+          margin-bottom: 0;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.42857143;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          cursor: pointer;
+          user-select: none;
+          background-image: none;
+          border: 1px solid transparent;
+          border-radius: 4px;
           color: #fff;
           background-color: #3498db;
-          padding: 3px;
           text-decoration: none;
-          border-radius: 5px;
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
         .my-project .cards .card .content a:hover {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-      .my-project .cards .card .image {
-        position: relative; }
 
 .skills {
   text-align: center; }
@@ -260,17 +308,18 @@ body {
     width: 19%;
     display: inline-block;
     margin: 100px 0; }
-    .skills .icons span {
-      display: block;
-      padding: 20px 0; }
-    .skills .icons img {
+    .skills .icons .aa {
       filter: grayscale(100%);
       width: 70px;
       height: 70px;
       transition: all 0.3s; }
-    .skills .icons img:hover {
-      cursor: pointer;
-      filter: grayscale(0); }
+    .skills .icons .hid {
+      display: block;
+      padding: 20px 0; }
+    .skills .icons .aa:hover {
+      filter: grayscale(0);
+      transform: translate(0, 20px);
+      cursor: pointer; }
 
 .hero-section-tow {
   background-image: linear-gradient(to right bottom, #051937, #0a254b, #103161, #173e77, #1e4b8e);
@@ -303,8 +352,9 @@ body {
       text-align: center; }
       .hero-section-tow .content .footer .contact p {
         position: absolute;
-        bottom: -50;
         left: 100px; }
+      .hero-section-tow .content .footer .contact-2 span {
+        display: block; }
 
 @media (max-width: 480px) {
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -370,7 +420,20 @@ body {
   .hero-section .content h1 {
     width: 100vw; }
 
+  .my-project .cards .card {
+    flex-basis: calc(100% - 20px); }
+
   .contact-me a i {
-    padding: 0 0 0 15px; } }
+    padding: 0 0 0 15px; }
+
+  .my-project .cards .card .content a {
+    display: block;
+    margin-bottom: 10px; }
+
+  .hero-section-tow {
+    padding: 220px 0; }
+
+  .hero-section-tow .content .footer .contact-2 span {
+    margin: 50px 24px 29px; } }
 
 /*# sourceMappingURL=style.css.map */

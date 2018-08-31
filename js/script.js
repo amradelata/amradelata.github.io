@@ -23,7 +23,7 @@ $(function () {
 		$('.nav li a, .button').click(function (e) {
 
 		$('html, body').animate({
-			scrollTop:$('#' + $(this).data('scroll')).offset().top
+			scrollTop:$('#' + $(this).data('scroll')).offset().top + 50
 		},1000);
 
 		// e.preventDefault(); //???
@@ -83,3 +83,13 @@ $(function () {
 
 
 
+// $(document).ready(function(){
+//     $(".aa").mouseover(function(){
+//         $(".hid").slideDown();
+//     });
+    
+	
+//   	$(".aa").mouseout(function(){
+//         $(".hid").slideUp();
+//     });
+// });
