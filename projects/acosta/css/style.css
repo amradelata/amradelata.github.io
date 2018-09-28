@@ -359,6 +359,9 @@ body {
     margin-bottom: 35px; }
 
   .fancy span:before, .fancy span:after {
-    width: 78px; } }
+    width: 78px; }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

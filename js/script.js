@@ -23,7 +23,7 @@ $(function () {
 		$('.nav li a, .button').click(function (e) {
 
 		$('html, body').animate({
-			scrollTop:$('#' + $(this).data('scroll')).offset().top + 50
+			scrollTop:$('#' + $(this).data('scroll')).offset().top -100
 		},1000);
 
 		// e.preventDefault(); //???
@@ -67,11 +67,6 @@ $(function () {
 
 	});
 
-
-
-
-
-
 	// nic scroll
 	$("html").niceScroll({
 		cursorcolor:'#192a56',
@@ -79,9 +74,6 @@ $(function () {
 	});
 
 });
-
-
-
 
 // $(document).ready(function(){
 //     $(".aa").mouseover(function(){

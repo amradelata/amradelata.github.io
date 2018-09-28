@@ -129,7 +129,7 @@ nav{
 /* Side menu */
 .side-menu{
     position: fixed;
-    right: -100%;
+    right: -106%;
     top: 0;
     bottom: 0;
     background-color: #232323;
@@ -505,13 +505,27 @@ nav{
 /*Media Query*/
 @media(max-width: 768px)
 {
-  .nav-right
-  {
+.nav-right a
+    {
+        color: #000; 
+    }
+.nav-left .tele
+{
     display: none;
-  }
+}
+.nav-right button
+    {
+        background-color: #000;
+        border-radius: 3px
+    }
   .logo
   {
     margin-right: 86px;
+  }
+  .nav-right
+  {
+    right: 10px;
+    position: absolute;
   }
   .right .white-circle
   {
@@ -634,5 +648,10 @@ nav{
 .copyright .logo2 span
 {
   left: 78%;  
+}
+
+#fly .fly-higher
+{
+    width: 100%;
 }
 }

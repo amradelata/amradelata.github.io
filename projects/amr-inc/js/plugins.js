@@ -61,13 +61,25 @@ $(function () {
 // #myslide
 		});
 
-
  
 });
 
 		// loading screen
 
+
 $(window).load(function () {
 
-	$(".loading-overlay, .loading-overlay .spinner").fadeOut(2000);	
+	$(".loading-overlay .spinner").fadeOut(2000);	
 });
+
+
+// $(document).ready(function(){
+//     $(window).load(function(){
+//         $(".spinner").hide(2000);
+//     });
+
+// });
+
+// $(window).load(function () {
+// 	$('.spinner').hide(2000);
+// });

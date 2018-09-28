@@ -6,5 +6,5 @@ sideMenuBtn.addEventListener('click', () => {
     sidebar.style.right = 0
 })
 sideMenuBtn_close.addEventListener('click', () => {
-    sidebar.style.right = '-100%'
+    sidebar.style.right = '-106%'
 })

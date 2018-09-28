@@ -588,8 +588,8 @@ body
 	.about-our-history
 		margin-top: 0
 
-	.customer-opinions .carousel-indicators
-		left: 15%
+	.carousel-indicators
+		left: 20%
 
 	.navbar-nav
 		margin: 0
@@ -624,23 +624,30 @@ body
 		top: 160px
 
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form
-		padding: 50px 30px
-
-	// .our-latest li:hover a
-	// 	padding: 10px 41px
-	// 	width: 50%
-	// 	margin: auto
-
-	// .our-latest ul li a
-	// 	width: 50%
-	// 	margin: auto
-
-	// h1, h2
-	// 	text-align: center
+		position: relative
+		width: 100vw
+		height: 70vh
+		background-color: #b694d8
+		text-align: center
+		z-index: 99999
+	.navbar .brand
+		width: 100%
+	.navbar .links li
+		margin-bottom: 20px
 
 
 
 
+.navbar-toggle
+	border: 1px solid #fff
 
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
+	background-color: #8148db
+
+.navbar-default .navbar-toggle
+	border-color: #8148db
+
+.navbar-default .navbar-toggle .icon-bar
+	background-color: #fff
 
 		
