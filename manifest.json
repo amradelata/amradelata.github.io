@@ -1,0 +1,64 @@
+{
+    "short_name": "Portfolio",
+    "name": "amr_front_end_developer_Portfolio",
+    "icons": [
+        {
+          "src": "/img/logos/192.png",
+          "type": "image/png",
+          "sizes": "192x192",
+          "purpose": "any maskable"
+        },
+        {
+          "src": "/img/logos/512.png",
+          "type": "image/png",
+          "sizes": "512x512",
+          "purpose": "any maskable"
+        }
+      ],
+    "start_url": "/",
+    "background_color": "#22272b",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#202020",
+    "shortcuts": [
+      {
+        "name": "react developer",
+        "short_name": "react",
+        "description": "View my this react developer",
+        "url": "/",
+        "icons": [{ "src": "/img/logos/192.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "amr Projects",
+        "short_name": "Projects",
+        "description": "View amr Projects",
+        "url": "/#Projects",
+        "icons": [{ "src": "/img/logos/SuperToroid.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "amradelata",
+        "short_name": "front_end_developer",
+        "description": "front_end_developer_react_developer",
+        "url": "/",
+        "icons": [{ "src": "/img/logos/SuperToroid.png", "sizes": "192x192" }]
+      }
+    ],
+    "description": "AMR | front end developer",
+    "screenshots": [
+      {
+        "src": "/img/screenshot/1.png",
+        "type": "image/png",
+        "sizes": "540x720"
+      },
+      {
+        "src": "/img/screenshot/2.png",
+        "type": "image/png",
+        "sizes": "540x720"
+      },
+      {
+        "src": "/img/screenshot/3.png",
+        "type": "image/png",
+        "sizes": "540x720"
+      }
+    ]
+  }

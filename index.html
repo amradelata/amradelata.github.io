@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      content="react_developer,amradelata,amr_adel_ata,Front_end_developer,web_developer,web_designer"
+    />
+    <meta name="theme-color" content="#202020" />
+    <link rel="apple-touch-icon" href="/img/logos/phoneBlack-Matte.png" />
+    <meta name="description" content="AMR | front end developer" />
+    <meta name="author" content="Amr Adel Ata" />
+    <title>AMR | front end developer</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="/img/logos/192.png"
+      alt="amr-face"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+    <script src="assets/js/parallax.js"></script>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="dot" data-index="0"><p>Home</p></div>
+      <div class="dot" data-index="1"><p>What I Do</p></div>
+      <div class="dot" data-index="2"><p>About</p></div>
+      <div class="dot" data-index="3"><p>Projects</p></div>
+      <div class="dot" data-index="4"><p>Contact</p></div>
+    </div>
+    <div class="sections">
+      <div class="section hero" id="scene" data-index="0">
+        <div data-depth="1" class="layer">
+          <img src="/img/logos/Cube.png" class="Cube" alt="Cube" />
+        </div>
+        <div data-depth="1" class="layer">
+          <img
+            src="/img/logos/RoundCube-Black-Matte.png"
+            class="Cylinder"
+            alt="Cylinder"
+          />
+        </div>
+        <div data-depth="1" class="layer">
+          <img src="/img/logos/SuperToroid.png" class="Super" alt="Super" />
+        </div>
+        <div class="overlay">
+          <div class="content">
+            <h1>
+              I'm Amr Adel Ata <br />
+              Front End Developer
+            </h1>
+            <div class="twoBtn">
+              <a
+                aria-label="cvBtn"
+                rel="noopener"
+                href="/assets/cv/Amr-adel-ata-frontEndCV2021.pdf"
+                target="_blank"
+                class="btnTwo"
+              >
+                Download Cv
+              </a>
+              
+              <a  aria-label="ProjectsPtn"
+                class="btnTwo ProjectsbtnpDisck"
+                onclick="goToProducts(index = 3)"
+                >Projects</a
+              >
+
+              <a class="btnTwo Projectsbtnphone" href="#Projects">Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section What-do-I-offer" id="What-do-I-offer" data-index="1">
+        <div class="whatIOfferContent">
+          <div class="mySlides w3-animate-fading">
+            <p class="title">Front End Developer</p>
+            <p class="paragraph">
+              with good knowledge in React vue and Angular<br />
+              using JavaScript,Typescript,React.js, Redux,next.js,Restful api.
+            </p>
+          </div>
+          <div class="mySlides w3-animate-fading">
+            <p class="title">Responsive Web Apps</p>
+            <p class="paragraph">Building Out Visual Components.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section about" id="about" data-index="2">
+        <div class="aboutCard">
+          <p class="title">About Amr</p>
+          <p class="paragraph">
+            I believe that anyone can create stunning things<br />
+            so I invested in myself physically by improving my lifestyle into a
+            healthy lifestyle<br />
+            and mentally by reading as much as possible and commitment to Web
+            Development, because it combines creativity and logical thinking.
+          </p>
+          <div class="frameworkIcons">
+            <div class="frameworkIcon js"></div>
+            <div class="frameworkIcon react"></div>
+            <div class="frameworkIcon angular"></div>
+            <div class="frameworkIcon vue"></div>
+          </div>
+        </div>
+        <div class="vector"></div>
+      </div>
+      <section class="section myProject" id="Projects" data-index="3">
+        <div class="scrollable-element">
+          <div class="desktop">
+            <div><i class="fas fa-bars phonePars" id="phonePars"></i></div>
+            <div class="dark">
+              <div class="yalow"></div>
+              <div class="yalow"></div>
+              <div class="yalow"></div>
+            </div>
+            <div class="towTaps">
+              <div class="tapLightDark">
+                <img
+                  src="/img/logos/phoneBlack-Matte.png"
+                  alt="logo"
+                  class="projectlogo"
+                />
+
+                <div class="top-button">
+                  <button class="projectbtn" id="all">All</button>
+                  <button class="projectbtn" id="React">React</button>
+                  <button class="projectbtn" id="Angular">Angular</button>
+                  <button class="projectbtn" id="front-end">Vue</button>
+                  <button class="projectbtn" id="uiUx">UI/UX projects</button>
+                  <button class="projectbtn" id="practicing">Practicing</button>
+                  <button class="projectbtn" id="wordpress">wordpress</button>
+                </div>
+              </div>
+              <div class="tapGray">
+                
+                <a aria-label="gitPtn"
+                  rel="noopener"
+                  href="https://github.com/amradelata"
+                  target="_blank"
+                  class="gitPtndicktop"
+                >
+                  More on Github <i class="fab fa-github"> </i>
+                </a>
+                <div class="all">
+                  <div class="cards">
+                    <div class="my-card" data-name="React">
+                      <div class="img react1">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="react_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/react-e-commerse"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>E-commerce React/Next/Redux toolkit</p>
+                    </div>
+                    <div class="my-card" data-name="front-end">
+                      <div class="img frontend0">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="pharmacy_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://pharmacy-amr.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="pharmacy_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/pharmacy"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>pharmacy vue/Nuxt</p>
+                    </div>
+                    <div class="my-card" data-name="front-end">
+                      <div class="img frontend7">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="covid_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://covid-19-coronavirus.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="covid_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/covid-19-corona-virus"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>COVID-19 CORONAVIRUS OUTBREAK</p>
+                    </div>
+                    <div class="my-card" data-name="front-end">
+                      <div class="img frontend1">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="commerce_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://nuxt-e-commerce-amr.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="commerce_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/new-e-commerce"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>E-commerce Vue,VueX,Nuxt</p>
+                    </div>
+                    <div class="my-card" data-name="front-end">
+                      <div class="img frontend2">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="spacex_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://amr-spacex.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="spacex_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/spacexApi"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>SpaceX</p>
+                    </div>
+
+                    <div class="my-card" data-name="Angular">
+                      <div class="img angular4">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="gomenassat"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://gomenassat.com/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>GoMenassat</p>
+                    </div>
+                    <div class="my-card" data-name="Angular">
+                      <div class="img angular0">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="todo_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://todo-amradelata.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="todo_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/My-todo"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Angular-ToDoList</p>
+                    </div>
+                    <div class="my-card" data-name="Angular">
+                      <div class="img angular1">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="weatherappangula_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://weatherappangula.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="weatherappangula_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/weatherApp"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Angular-weather App</p>
+                    </div>
+                    <div class="my-card" data-name="Angular">
+                      <div class="img angular3">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="spotify_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://spotify-angular.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="spotify_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/spotify"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Angular-spotify</p>
+                    </div>
+                    <div class="my-card" data-name="uiUx">
+                      <div class="img uiUx1">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="starnight_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://starnight.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="starnight_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/3Starnight"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Starnight</p>
+                    </div>
+                    <div class="my-card" data-name="uiUx">
+                      <div class="img uiUx5">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="eclipse_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://eclipse-amr.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="eclipse_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/Eclipse"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Eclipse</p>
+                    </div>
+                    <div class="my-card" data-name="uiUx">
+                      <div class="img uiUx6">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="colingz_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://colingz.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="colingz_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/5Colingz"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Colingz</p>
+                    </div>
+                    <div class="my-card" data-name="uiUx">
+                      <div class="img uiUx7">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="acosta_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://acosta-arch.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="acosta_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/Acosta-Arch"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Acosta</p>
+                    </div>
+                    <div class="my-card" data-name="uiUx">
+                      <div class="img uiUx8">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="drone_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://drone-amr.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Dron</p>
+                    </div>
+                    <div class="my-card" data-name="uiUx">
+                      <div class="img uiUx9">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="counsel_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://counsel-amr.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="counsel_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/Counsel"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Counsel</p>
+                    </div>
+                    <div class="my-card" data-name="practicing">
+                      <div class="img practic0">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="dazzling_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://dazzling-meninsky-930fda.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="dazzling_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/Fight"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Fight Game</p>
+                    </div>
+                    <div class="my-card" data-name="practicing">
+                      <div class="img practic2">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="calculator_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://amradelata-calculator.netlify.app/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                              
+                              <a aria-label="calculator_code"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://github.com/amradelata/Calculator-new"
+                              >
+                                <i class="fab fa-github"> </i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>calculator</p>
+                    </div>
+                    <div class="my-card" data-name="wordpress">
+                      <div class="img wordpress0">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="misralhurra_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="https://misralhurra.com/en/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Misralhurra</p>
+                    </div>
+                    <div class="my-card" data-name="wordpress">
+                      <div class="img wordpress1">
+                        <div class="overlayImg">
+                          <div class="content">
+                            <div class="twoBns">
+                              
+                              <a aria-label="shawrmaart_live"
+                                rel="noopener"
+                                target="_blank"
+                                href="http://shawrmaart.com/branches/"
+                              >
+                                <i class="fas fa-cloud"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Shawrmaart</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="section contact" id="contact" data-index="4">
+        <div class="middle">
+          <div class="padding">
+            <p class="havaproject">Let's chat</p>
+            <p class="myEmail">
+              
+              <a rel="noopener"
+                href="mailto:amradelata@gmail.com"
+                target="_blank"
+                >amradelata@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="socialMedia">
+            
+            <a rel="noopener"
+              class="btn"
+              href="https://github.com/amradelata"
+              target="_blank"
+              aria-label="github"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              rel="noopener"
+              class="btn"
+              href="https://www.linkedin.com/in/amr-adel-ata/"
+              target="_blank"
+              aria-label="linked"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+    <script>
+      var scene = document.getElementById("scene");
+      var parallax = new Parallax(scene);
+    </script>
+  </body>
+</html>
