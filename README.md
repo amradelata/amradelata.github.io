@@ -10,4 +10,4 @@ https://www.amradelata.com/
 amradelata.github.io
 ```
 
-![100](/img/Capture.PNG"100")
+![100](/img/Capture.PNG "100")

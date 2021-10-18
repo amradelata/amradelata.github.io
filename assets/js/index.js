@@ -14,7 +14,7 @@ let allCards = document.querySelectorAll(".my-card");
 let buttons = document.querySelectorAll("button");
 let phonePars = document.getElementById("phonePars");
 let topbtn = document.querySelector(".tapLightDark");
-let myphoneprojectbtn = document.querySelectorAll(".projectbtn");
+let myPhoneProjectBtn = document.querySelectorAll(".projectbtn");
 const sections = document.querySelectorAll(".section");
 const sectionContainer = document.querySelector(".sections");
 const dots = document.querySelectorAll(".dot");
@@ -114,7 +114,7 @@ phonePars.addEventListener("click", () => {
   topbtn.classList.toggle("heid");
 });
 
-myphoneprojectbtn.forEach((item) =>
+myPhoneProjectBtn.forEach((item) =>
   item.addEventListener("click", () => {
     topbtn.classList.remove("heid");
   })
