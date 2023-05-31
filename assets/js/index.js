@@ -1,3 +1,9 @@
+
+
+
+
+
+
 //Service Workers register or Download
 if('serviceWorker' in navigator){
   window.addEventListener('load',()=>{
@@ -31,6 +37,26 @@ sections.forEach((section, index) => {
   }
 });
 
+
+
+function up(){
+    performScroll(-1);
+}
+function down(){
+    performScroll(1);
+}
+document.addEventListener('keydown', (event) => {
+  var code = event.code;
+  // Alert the key name and key code on keydown
+  if(code ==='ArrowUp'){
+    performScroll(-1);
+  }
+  if(code ==='ArrowDown'){
+    performScroll(1);
+  }
+  
+}, false);
+
 dots.forEach((dot, index) => {
   dot.addEventListener("click", (event) => {
     resetDotIndicator();
@@ -49,24 +75,25 @@ document.addEventListener("touchstart", (event) => {
   touchStart = event.changedTouches[0].clientY;
 });
 
-document.addEventListener("touchend", (event) => {
-  touchEnd = event.changedTouches[0].clientY;
-  if (touchStart > touchEnd) {
-    performScroll(1);
-  } else {
-    performScroll(-1);
-  }
-});
+// document.addEventListener("touchend", (event) => {
+//   touchEnd = event.changedTouches[0].clientY;
+//   if (touchStart > touchEnd) {
+//     // performScroll(1);
+//   } else {
+//     // performScroll(-1);
+//   }
+// });
 document.addEventListener("wheel", (event) => {
-  if (!canScroll) {
-    return;
-  }
-  canScroll = false;
-  setTimeout(() => {
-    canScroll = true;
-  }, 500);
-  scrollDir = event.deltaY > 1 ? 1 : -1;
-  performScroll(scrollDir);
+  
+  // if (!canScroll) {
+  //   return;
+  // }
+  // canScroll = false;
+  // setTimeout(() => {
+  //   canScroll = true;
+  // }, 500);
+  // scrollDir = event.deltaY > 1 ? 1 : -1;
+  // performScroll(scrollDir);
 });
 
 function performScroll(scrollDir) {

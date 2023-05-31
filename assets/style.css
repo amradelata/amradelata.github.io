@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+.arrowBtn{
+  background-color: transparent;
+  border:none ;
+  cursor: pointer;
+}
+.arrowBtn img{
+  width: 20px;
+}
+.arrowBtn .down{
+  transform: rotateX(
+180deg);
+}
 .lodging {
   width: 100vw;
   height: 100vh;
@@ -417,9 +429,9 @@ html {
   flex-basis: calc(25% - 20px);
   display: inline-block;
   margin: 10px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-
   background: #22272b;
 }
 .my-card p {
