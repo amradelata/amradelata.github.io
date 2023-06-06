@@ -8,6 +8,7 @@
   background-color: transparent;
   border:none ;
   cursor: pointer;
+  outline:none
 }
 .arrowBtn img{
   width: 20px;
@@ -260,7 +261,7 @@ html {
   font-size: 40px;
   font-weight: normal;
   line-height: 150%;
-  width: 720px;
+  width: 662px;
 }
 /* about */
 
@@ -506,6 +507,9 @@ html {
 .angular4 {
   background-image: url(../img//myproject/Angular/gomnsat.webp);
 }
+.angular5 {
+  background-image: url(../img//myproject/Angular/Droners.webp);
+}
 .frontend0 {
   background-image: url(../img/myproject/vue/farmcy.webp);
 }
@@ -521,10 +525,17 @@ html {
 }
 
 .frontend3 {
-  background-image: url(../img/myproject/vue/movie.webp);
+  background-image: url(../img/myproject/vue/eradco.webp);
 }
-
-
+.frontend4 {
+  background-image: url(../img/myproject/vue/visitors.webp);
+}
+.frontend5 {
+  background-image: url(../img/myproject/vue/Capsdture.webp);
+}
+.frontend6{
+  background-image: url(../img/myproject/vue/hilights.webp);
+}
 .uiUx1 {
   background-image: url(/img/myproject/uiux/Starnight.webp);
 }
