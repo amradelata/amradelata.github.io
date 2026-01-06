@@ -4,18 +4,17 @@
   box-sizing: border-box;
 }
 
-.arrowBtn{
+.arrowBtn {
   background-color: transparent;
-  border:none ;
+  border: none;
   cursor: pointer;
-  outline:none
+  outline: none;
 }
-.arrowBtn img{
+.arrowBtn img {
   width: 20px;
 }
-.arrowBtn .down{
-  transform: rotateX(
-180deg);
+.arrowBtn .down {
+  transform: rotateX(180deg);
 }
 .lodging {
   width: 100vw;
@@ -30,7 +29,20 @@
   transform: translate(-50%, -50%);
   color: #fff;
 }
-.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-animate-fading {
+  animation: fading 10s infinite;
+}
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .Cube,
 .Cylinder,
 .Super {
@@ -89,7 +101,6 @@
 html,
 body {
   font-family: "Varela Round", sans-serif;
-  
 }
 body {
   position: relative;
@@ -446,7 +457,7 @@ html {
   padding: 0;
   margin: 0;
   height: 200px;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   box-shadow: 0 3px 6px rgb(0 0 0 / 15%);
@@ -533,7 +544,7 @@ html {
 .frontend5 {
   background-image: url(../img/myproject/vue/Capsdture.webp);
 }
-.frontend6{
+.frontend6 {
   background-image: url(../img/myproject/vue/hilights.webp);
 }
 .uiUx1 {
@@ -559,11 +570,9 @@ html {
   background-image: url(/img/myproject/uiux/counsel.webp);
 }
 
-
 .practic0 {
   background-image: url(/img/myproject/practes/2.webp);
 }
-
 
 .practic2 {
   background-image: url(/img/myproject/practes/1.webp);
@@ -574,7 +583,6 @@ html {
 .wordpress1 {
   background-image: url(/img/myproject/wordprees/2.webp);
 }
-
 
 .my-card p {
   text-align: center;
@@ -778,9 +786,8 @@ html {
   html,
   body {
     overflow: auto;
-    
   }
-  
+
   .dark {
     margin-top: 200px;
   }
