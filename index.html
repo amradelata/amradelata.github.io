@@ -1,26 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
-    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Amr Adel Ata – Front End Developer (React, Vue, Angular, Next.js)</title>
     <meta
-      content="react_developer,amradelata,amr_adel_ata,Front_end_developer,web_developer,web_designer"
+      name="description"
+      content="Amr Adel Ata — Front End Developer skilled in React, Next.js, Vue/Nuxt, Angular and TypeScript. View my projects, CV and contact details."
     />
-    <meta name="theme-color" content="#202020" />
-    <link rel="apple-touch-icon" href="/img/logos/phoneBlack-Matte.png" />
-    <meta name="description" content="AMR | front end developer" />
+    <meta
+      name="keywords"
+      content="Amr Adel Ata, amradelata, Front End Developer, React Developer, Next.js Developer, Vue Developer, Nuxt Developer, Angular Developer, JavaScript, TypeScript, Web Developer, Portfolio"
+    />
     <meta name="author" content="Amr Adel Ata" />
-    <title>AMR | front end developer</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="/img/logos/192.png"
-      alt="amr-face"
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://amradelata.github.io/" />
+    <meta name="theme-color" content="#202020" />
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Amr Adel Ata" />
+    <meta property="og:title" content="Amr Adel Ata – Front End Developer" />
+    <meta
+      property="og:description"
+      content="Front End Developer skilled in React, Next.js, Vue/Nuxt, Angular and TypeScript. Projects, CV and contact."
     />
+    <meta property="og:url" content="https://amradelata.github.io/" />
+    <meta property="og:image" content="https://amradelata.github.io/img/screenshot/1.png" />
+    <meta property="profile:first_name" content="Amr" />
+    <meta property="profile:last_name" content="Adel Ata" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Amr Adel Ata – Front End Developer" />
+    <meta
+      name="twitter:description"
+      content="Front End Developer skilled in React, Next.js, Vue/Nuxt, Angular and TypeScript."
+    />
+    <meta name="twitter:image" content="https://amradelata.github.io/img/screenshot/1.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://amradelata.github.io/#person",
+            "name": "Amr Adel Ata",
+            "alternateName": "amradelata",
+            "jobTitle": "Front End Developer",
+            "url": "https://amradelata.github.io/",
+            "email": "mailto:amradelata@gmail.com",
+            "image": "https://amradelata.github.io/img/logos/512.png",
+            "sameAs": [
+              "https://github.com/amradelata",
+              "https://www.linkedin.com/in/amr-adel-ata/"
+            ],
+            "knowsAbout": [
+              "JavaScript", "TypeScript", "React", "Next.js", "Redux",
+              "Vue.js", "Nuxt", "Pinia", "Angular", "GraphQL",
+              "Socket.IO", "Strapi", "REST APIs", "Responsive Web Design"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "url": "https://amradelata.github.io/",
+            "name": "Amr Adel Ata – Portfolio",
+            "author": { "@id": "https://amradelata.github.io/#person" }
+          }
+        ]
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+    />
+    <link rel="apple-touch-icon" href="/img/logos/phoneBlack-Matte.png" />
+    <link rel="icon" type="image/png" href="/img/logos/192.png" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
@@ -35,7 +93,7 @@
     <div class="navigation">
       <div>
         <button class="arrowBtn" onclick="up()">
-          <img src="./img/icons/arrow.svg" />
+          <img src="./img/icons/arrow.svg" alt="Scroll up" />
         </button>
       </div>
       <div class="dot" data-index="0"><p>Home</p></div>
@@ -45,7 +103,7 @@
       <div class="dot" data-index="4"><p>Contact</p></div>
       <div>
         <button class="arrowBtn" onclick="down()">
-          <img class="down" src="./img/icons/arrow.svg" />
+          <img class="down" src="./img/icons/arrow.svg" alt="Scroll down" />
         </button>
       </div>
       <p
@@ -66,17 +124,17 @@
     <div class="sections">
       <div class="section hero" id="scene" data-index="0">
         <div data-depth="1" class="layer">
-          <img src="/img/logos/Cube.png" class="Cube" alt="Cube" />
+          <img src="/img/logos/Cube.png" class="Cube" alt="" />
         </div>
         <div data-depth="1" class="layer">
           <img
             src="/img/logos/RoundCube-Black-Matte.png"
             class="Cylinder"
-            alt="Cylinder"
+            alt=""
           />
         </div>
         <div data-depth="1" class="layer">
-          <img src="/img/logos/SuperToroid.png" class="Super" alt="Super" />
+          <img src="/img/logos/SuperToroid.png" class="Super" alt="" />
         </div>
         <div class="overlay">
           <div class="content">
@@ -110,30 +168,30 @@
       <div class="section What-do-I-offer" id="What-do-I-offer" data-index="1">
         <div class="whatIOfferContent">
           <div class="mySlides w3-animate-fading">
-            <p class="title">new skills</p>
+            <h2 class="title">new skills</h2>
             <div style="margin-left: 70px">
               <p>
-                nuxt 3 , pinia, graphql, strapi, algolea, elastc search,
-                microservis , Socket.IO
+                Nuxt 3, Pinia, GraphQL, Strapi, Algolia, Elasticsearch,
+                microservices, Socket.IO
               </p>
               <br />
               <p>* auth with social</p>
-              <p>* send emails to very pay account with Very Pay</p>
+              <p>* send emails to verify accounts</p>
               <p>* send sms message to verify phone with twilio</p>
-              <p>* send reset to whatsapp with bevatel</p>
+              <p>* send password reset via WhatsApp with Beevatel</p>
               <p>* realtime cart with Socket.IO</p>
             </div>
           </div>
           <div class="mySlides w3-animate-fading">
-            <p class="title">Front End Developer</p>
+            <h2 class="title">Front End Developer</h2>
             <p class="paragraph">
               with good knowledge of React vue and Angular<br />
-              using JavaScript,Typescript,React.js, Redux, next. js, Restful
-              API.
+              using JavaScript,Typescript,React.js, Redux, Next.js, RESTful
+              APIs.
             </p>
           </div>
           <div class="mySlides w3-animate-fading">
-            <p class="title">Responsive Web Apps</p>
+            <h2 class="title">Responsive Web Apps</h2>
             <p class="paragraph">building out visual components.</p>
           </div>
         </div>
@@ -141,7 +199,12 @@
 
       <div class="section about" id="about" data-index="2">
         <div class="aboutCard">
-          <p class="title">About Amr</p>
+          <h2 class="title">About Amr</h2>
+          <p class="paragraph">
+            Front End Developer building fast, responsive web apps with React,
+            Next.js, Vue/Nuxt, Angular and TypeScript.
+          </p>
+          <br />
           <p class="paragraph">
             I believe that anyone can create stunning things.<br />so I invested
             in myself physically by improving my lifestyle,<br />and mentally by
@@ -213,7 +276,7 @@
                                 aria-label="react_code"
                                 rel="noopener"
                                 target="_blank"
-                                href="https://youtu.be/8H7ELDTqoFEhttps://youtu.be/8H7ELDTqoFE"
+                                href="https://youtu.be/8H7ELDTqoFE"
                               >
                                 <i class="fab fa-youtube"></i>
                               </a>
